@@ -1,4 +1,4 @@
-name: Publish docker image anisette_server
+name: Publish appimage anisette_server
 
 on:
   push:
