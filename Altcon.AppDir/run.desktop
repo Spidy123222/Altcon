@@ -1,0 +1,6 @@
+[Desktop Entry]
+
+Name=Altcon
+Exec=docker-entrypoint.sh
+Type=Application
+Categories=Utility
