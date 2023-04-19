@@ -30,5 +30,5 @@ jobs:
       - name: Install Altserver-Linux
         run: cd ./Altcon.AppDir/usr/bin && ./get-altserver.sh
       - name: Run linuxdeploy
-        run: cd ./Altcon.AppDir && linuxdeploy-x86_64.AppImage --output=appimage
+        run: linuxdeploy-x86_64.AppImage --appdir=./Altcon.AppDir --output=appimage
         
