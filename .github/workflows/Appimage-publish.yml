@@ -22,6 +22,6 @@ jobs:
       - name: Installing Dependencies
         run: sudo apt-get update && sudo apt-get install ca-certificates usbmuxd libimobiledevice6 libimobiledevice-utils libavahi-compat-libdnssd-dev curl -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/ && ./get-altserver.sh
       - name: Adding appimage contents
-        run: sudo mv ./docker-entrypoint.sh ./Altcon.AppDir/usr/bin/
+        run: sudo mv ./docker-entrypoint.sh ./Altcon.AppDir/usr/bin/ && sudo chmod +x ./Altcon.AppDir/AppRun && sudo chmod +x ./Altcon.AppDir/run.desktop && sudo chmod +x ./Altcon.AppDir/usr/bin/docker-entrypoint.sh
 
         
