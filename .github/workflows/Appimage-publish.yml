@@ -20,7 +20,7 @@ jobs:
         with:
           submodules: recursive
       - name: Installing Dependencies
-        run: sudo apt-get update && sudo apt-get install ca-certificates usbmuxd libimobiledevice6 libimobiledevice-utils libavahi-compat-libdnssd-dev curl -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/
+        run: sudo add-apt-repository universe && sudo apt-get update && sudo apt-get install libfuse2 ca-certificates usbmuxd libimobiledevice6 libimobiledevice-utils libavahi-compat-libdnssd-dev curl -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/
       - name: Install LinuxDeploy
         uses: miurahr/install-linuxdeploy-action@v1
         with:
