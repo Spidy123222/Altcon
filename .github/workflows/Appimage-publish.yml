@@ -19,6 +19,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: recursive
+
+      - name: Install LinuxDeploy
+        uses: miurahr/install-linuxdeploy-action@v1
       - name: Installing Dependencies
         run: sudo apt-get update && sudo apt-get install ca-certificates usbmuxd libimobiledevice6 libimobiledevice-utils libavahi-compat-libdnssd-dev curl -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/
       - name: Adding appimage contents
