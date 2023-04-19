@@ -24,6 +24,6 @@ jobs:
       - name: Adding appimage contents
         run: sudo mv ./docker-entrypoint.sh ./Altcon.AppDir/usr/bin/ && sudo chmod +x ./Altcon.AppDir/AppRun && sudo chmod +x ./Altcon.AppDir/run.desktop && sudo chmod +x ./Altcon.AppDir/usr/bin/docker-entrypoint.sh && sudo mv ./get-altserver.sh ./Altcon.AppDir/usr/bin && cd ./Altcon.AppDir/usr/bin && sudo chmod +x ./get-altserver.sh
       - name: Install Altserver-Linux
-        run: cd ./get-altserver.sh
+        run: ./get-altserver.sh
 
         
