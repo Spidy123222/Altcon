@@ -19,3 +19,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: recursive
+      #- name: Creating appdir
+      #  run: mkdir Altcon
+      #- name: Creating Directorys
+      #  run: cd Altcon && mkdir usr && mkdir bin
+        
